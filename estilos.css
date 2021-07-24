@@ -3,11 +3,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 4fr;
     overflow-x: hidden;
-    background-color: #dddddd;
+    background-color: #eeeeee;
 }
 
 #nav-bar {
-    background-color: #dddddd;
+    background-color: #eeeeee;
     height: 100vh;
     width: 100%;
     overflow-y: scroll;
@@ -21,19 +21,29 @@ body {
 #titulo h1 {
     position: fixed;
     height: 30px;
-    background-color: #dddddd;
+    background-color: #eeeeee;
     padding: 20px;
     margin-top: -10px;
+}
+
+h2 {
+    color: #3333ff;
 }
 
 .nav-link {
     border: 1px solid #000000;
     display: block;
-    padding: 20px;
+    padding: 30px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #00a013;
+    text-decoration: underline;
 }
 
 #main-doc {
-    background-color: #dddddd;
+    background-color: #eeeeee;
     height: 100vh;
     overflow-y: scroll;
     overflow-wrap: break-word;
