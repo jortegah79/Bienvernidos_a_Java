@@ -5,6 +5,13 @@ body {
 
 #nav-bar {
     background-color: aquamarine;
+    height: 900px;
+}
+
+.nav-link {
+    border: 1px solid #000000;
+    display: block;
+    padding: 15px 20px;
 }
 
 #main-doc {

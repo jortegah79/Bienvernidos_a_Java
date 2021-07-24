@@ -15,9 +15,9 @@
             <h1>Bienvenidos a JAVA</h1>
         </header>
         <header>
-            <a href="#" class="nav-link">Primeros pasos con Java</a></header>
+            <a href="#primeros_pasos_con_java" class="nav-link">Primeros pasos con Java</a></header>
         <header>
-            <a class="nav-link">sadasdasdadsasd</a>
+            <a href="#estructura_basica" class="nav-link">EStructura básica</a>
         </header>
         <header>
             <a class="nav-link">sadasdasdadsasd</a></header>
@@ -27,18 +27,31 @@
             <header><a class="nav-link">sadasdasdadsasd</a></header>
             <header><a class="nav-link">sadasdasdadsasd</a></header>
             <header><a class="nav-link">sadasdasdadsasd</a></header>
-            <header><a class="nav-link">sadasdasdadsasd</a></header>
+            <header><a id="bichito" class="nav-link">sadasdasdadsasd</a></header>
     </nav>
     <main id="main-doc">
         <section id="primeros_pasos_con_Java" class="main-section">
             <header>
                 <h2>Primeros pasos con Java</h2>
             </header>
-            <p>Si vienes de un lenguaje de programación como javascript, la sintaxis te sonará porque es ,relativamente, parecida salvo por el hecho de el fuerte tipado. En JAVA un dato tiene que inicializarse marcando a fuego su tipo
-
-                <code> int x=5;<br>
-                       String palabra="interesante";                   
-                </code></p>
+            <p>JAVA fué creado en 1991 por <strong>SUN MICROSYSTEMS</strong>,aunque su primera versión salió a la luz en 1996. Es un lenguaje de propósito general y orientado a objeto.</p>
+            <p>Puede ser utilizado en diversos sistemas operativos, puesto que podemos implementar aplicaciones en Windows,Linux y Mac.</p>
+            <p>Otra característica es que el colector de basura es automático. A difeferencia de c++,por ejemplo, no tenemos que preocuparnos de liberar de la memória las variables declaradas.</p>
+            <p>Java no es JAVASCRIPT. Puede llevar a confusión y a pesar de que su sintaxis es parecida, a medida que avanzamos vemos mayores diferencias entre ellos.</p>
+        </section>
+        <section id="estructura_basica" class="main-section">
+            <header>
+                <h2>Estructura básica</h2>
+            </header>
+            <p>Todo programa en java necesita un método main o un método init(si hablamos de java en un servidor).Todo ello englobado en una clase principal.</p>
+            <pre><code>
+                    public class ClasePrincipal{
+                        public static void main(String [] args){
+                            System.out.println("Hola mundo");
+                        }
+                    }
+            </code></pre>
+            <p>Este sería nuestro primer programa con Java.Un "hola mundo".Como vemos, debe de ir entre llaves.La clase engloba todo y cada método engloba el grupo de instrucciones que le pertenecen.</p>
         </section>
         <section id="tipos_de_dato_primitivo" class="main-section">
             <header>
