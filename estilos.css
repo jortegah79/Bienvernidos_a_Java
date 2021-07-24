@@ -1,0 +1,12 @@
+body {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
+#nav-bar {
+    background-color: aquamarine;
+}
+
+#main-doc {
+    background-color: darkcyan;
+}
