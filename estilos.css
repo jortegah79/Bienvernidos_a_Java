@@ -23,6 +23,7 @@ body {
     height: 30px;
     background-color: #eeeeee;
     padding: 20px;
+    width: 1fr;
     margin-top: -10px;
 }
 
