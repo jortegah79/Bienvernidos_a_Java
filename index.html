@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>documentacion</title>
-    <link rel="stylesheet" type="text/css" href="estilos.css" />
+    <link href="estilos.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -15,41 +15,48 @@
             <h1>Bienvenidos a JAVA</h1>
         </header>
         <header id="primer-elemento">
-            <a href="#primeros_pasos_con_java" class="nav-link">Primeros pasos con Java</a>
+            <a class="nav-link" href="#primeros_pasos_con_java">
+                Primeros pasos con Java
+            </a>
         </header>
         <header>
-            <a href="#estructura_basica" class="nav-link">Estructura básica</a>
+            <a class="nav-link" href="#estructura_basica">Estructura básica</a>
         </header>
         <header>
-            <a href="#tipos_de_dato" class="nav-link">Tipos de dato</a>
+            <a class="nav-link" href="#tipos_de_dato">Tipos de dato</a>
         </header>
         <header>
-            <a href="#operadores" class="nav-link">Operadores</a>
+            <a class="nav-link" href="#operadores">Operadores</a>
         </header>
         <header>
-            <a href="#constantes_y_variables" class="nav-link">Constantes y variables</a>
+            <a class="nav-link" href="#constantes_y_variables">
+                Constantes y variables
+            </a>
         </header>
         <header>
-            <a href="#condicionales" class="nav-link">Condicionales</a>
+            <a class="nav-link" href="#condicionales">Condicionales</a>
         </header>
         <header>
-            <a href="#estructuras_repetitivas" class="nav-link">Estructuras repetitivas</a>
+            <a class="nav-link" href="#estructuras_repetitivas">
+                Estructuras repetitivas
+            </a>
         </header>
         <header>
-            <a href="#los_metodos" class="nav-link">Los métodos.</a>
+            <a class="nav-link" href="#los_metodos">Los métodos.</a>
         </header>
         <header>
-            <a href="#mas_informacion" class="nav-link">Más información</a>
+            <a class="nav-link" href="#mas_informacion">Más información</a>
         </header>
     </nav>
 
     <main id="main-doc">
-        <section id="primeros_pasos_con_Java" class="main-section">
+        <section class="main-section" id="primeros_pasos_con_Java">
             <header>
                 <h2>Primeros pasos con Java</h2>
             </header>
             <p>
-                JAVA fué creado en 1991 por <strong>SUN MICROSYSTEMS</strong>,aunque su primera versión salió a la luz en 1996. Es un lenguaje de propósito general y orientado a objeto.
+                JAVA fué creado en 1991 por
+                <strong>SUN MICROSYSTEMS</strong>,aunque su primera versión salió a la luz en 1996. Es un lenguaje de propósito general y orientado a objeto.
             </p>
             <p>
                 Puede ser utilizado en diversos sistemas operativos, puesto que podemos implementar aplicaciones en Windows,Linux y Mac.
@@ -61,7 +68,7 @@
                 Java no es JAVASCRIPT. Puede llevar a confusión y a pesar de que su sintaxis es parecida, a medida que avanzamos vemos mayores diferencias entre ellos.
             </p>
         </section>
-        <section id="estructura_basica" class="main-section">
+        <section class="main-section" id="estructura_basica">
             <header>
                 <h2>Estructura básica</h2>
             </header>
@@ -69,17 +76,17 @@
                 Todo programa en java necesita un método main o un método init(si hablamos de java en un servidor).Todo ello englobado en una clase principal.
             </p>
             <pre><code>
-                    public class ClasePrincipal{
-                        public static void main(String [] args){
-                            System.out.println("Hola mundo");
-                        }
-                    }
-            </code></pre>
+public class ClasePrincipal{
+    public static void main(String [] args){
+        System.out.println("Hola mundo");
+    }
+}
+</code></pre>
             <p>
                 Este sería nuestro primer programa con Java.Un "hola mundo".Como vemos, debe de ir entre llaves.La clase engloba todo y cada método engloba el grupo de instrucciones que le pertenecen.
             </p>
         </section>
-        <section id="tipos_de_dato" class="main-section">
+        <section class="main-section" id="tipos_de_dato">
             <header>
                 <h2>Tipos de dato</h2>
             </header>
@@ -108,270 +115,241 @@
                 </li>
             </ul>
             <p>
-                Además, hay un dato compuesto que se usa tanto que casi podriamos considerarlo un primitivo(En otros lenguajes lo és):<strong>EL STRING O CADENA</strong
-          >
-        </p>
-        <p>La cadena es un grupo de chararacter formando una cadena.</p>
-        <pre><code>
-                      char letra='a';
-                      String palabra="aaaaa";
+                Además, hay un dato compuesto que se usa tanto que casi podriamos considerarlo un primitivo(En otros lenguajes lo és):
+                <strong>
+                    EL STRING O CADENA
+                </strong>
+            </p>
+            <p>La cadena es un grupo de chararacter formando una cadena.</p>
+            <pre><code>
+char letra='a';
+String palabra="aaaaa";
                 </code></pre>
-        <p>
-          El char se escribe entre comilla simple y el string entre dobles
-          comillas.
-        </p>
-      </section>
-      <section id="operadores" class="main-section">
-        <header>
-          <h2>Operadores</h2>
-        </header>
-        <p>
-          Podemos utilizar los diferentes operadores matematicos habituales. La
-          suma, resta, multiplicación y división. Agregamos el resto(%) que nos
-          dá el resto de una división.
-        </p>
-        <p>
-          También tenemos los operadores <(menor que) ,> (mayor que), <=( menor
-          o igual que) o=>(mayor o igual que)
-        </p>
-        <pre><code>
-                     int suma=4 +3;          //resultado :7;
-                     int resta=4-3;          //resultado :1;
-                     int multiplicacion=4*3; //resultado :12;
-                     int division=4/3;       //resultado :1;
-                     int resto=4%3;          //resultado :1; Es lo que nos sobra de la división.
+            <p>
+                El char se escribe entre comilla simple y el string entre dobles comillas.
+            </p>
+        </section>
+        <section class="main-section" id="operadores">
+            <header>
+                <h2>Operadores</h2>
+            </header>
+            <p>
+                Podemos utilizar los diferentes operadores matematicos habituales. La suma, resta, multiplicación y división. Agregamos el resto(%) que nos dá el resto de una división.
+            </p>
+            <p>
+                También tenemos los operadores
+                <(menor que) ,> (mayor que),
+                    <=( menor o igual que) o=>(mayor o igual que)
+            </p>
+            <pre><code>
+int suma=4 +3;          //resultado :7;
+int resta=4-3;          //resultado :1;
+int multiplicacion=4*3; //resultado :12;
+int division=4/3;       //resultado :1;
+int resto=4%3;          //resultado :1; Es lo que nos sobra de la división.
 
                 </code></pre>
-        <p>
-          También tenemos los operadores lógicos or y and y la negación,
-          indicada con (!) delante de la sentencia.
-        </p>
-        <pre><code> 
-                     true || false = true;   //Esto es un or. Si una de las condiciones, como mínimo, se cumple, el resultado es true.
-                     true && false =false;   //ESto es un and. Si una de las condiciones no es true, entonces es false;
-                     !true=false;            //esto es una negación. Cualquier cosa a lo que lo antepongamos, le daremos un valor contrario.
-                                                    (Hablamos de datos lógicos)
+            <p>
+                También tenemos los operadores lógicos or y and y la negación, indicada con (!) delante de la sentencia.
+            </p>
+            <pre><code> 
+//Esto es un or. Si una de las condiciones, como mínimo, 
+//se cumple, el resultado es true.
+true || false = true; 
+//Esto es un and. Si una de las condiciones no es true,
+// entonces es false; 
+true && false =false;   
+//esto es una negación.
+//Cualquier cosa a lo que lo antepongamos,
+//le daremos un valor contrario.
+//(Hablamos de datos lógicos)
+!true=false;            
                 </code></pre>
-      </section>
-      <section id="constantes_y_variables" class="main-section">
-        <header>
-          <h2>Constantes y variables</h2>
-        </header>
-        <p>
-          Un punto importante es conocer las variables y las constantes. Una
-          variable es una porción de memoria que declaramos y que durante la
-          ejecución del programa, puede tener diferentes valores. Una constante
-          tiene siempre un mismo valor.
-        </p>
-        <p>Para darles un valor, utilizamos el signo de asignación (=)</p>
-        <pre><code>
-                    int x=5;            //Esto es una variable.
-                    final int v=10;     //Esto es una constante.
-                    x=10;               //correcto;
-                    v=14;               //error.
+        </section>
+        <section class="main-section" id="constantes_y_variables">
+            <header>
+                <h2>Constantes y variables</h2>
+            </header>
+            <p>
+                Un punto importante es conocer las variables y las constantes. Una variable es una porción de memoria que declaramos y que durante la ejecución del programa, puede tener diferentes valores. Una constante tiene siempre un mismo valor.
+            </p>
+            <p>Para darles un valor, utilizamos el signo de asignación (=)</p>
+            <pre><code>
+int x=5;            //Esto es una variable.
+final int v=10;     //Esto es una constante.
+x=10;               //correcto;
+v=14;               //error.
                 </code></pre>
-      </section>
+        </section>
 
-      <section id="condicionales" class="main-section">
-        <header>
-          <h2>Condicionales</h2>
-        </header>
-        <p>
-          Para ofrecer opciones al código, podemos utilizar los
-          condicionales.Estos pueden ser los if, los if-else o los switch-case.
-        </p>
-        <p>
-          Los condicionales son como opciones para el código. Si se cumple una
-          condición, realizaremos una serie de instrucciones.
-        </p>
-        <pre><code>
-                   
-                int x=5;
-                if(x > 3){
-                    Sytem.out.println("Es mayor que 3");
-                }
+        <section class="main-section" id="condicionales">
+            <header>
+                <h2>Condicionales</h2>
+            </header>
+            <p>
+                Para ofrecer opciones al código, podemos utilizar los condicionales.Estos pueden ser los if, los if-else o los switch-case.
+            </p>
+            <p>
+                Los condicionales son como opciones para el código. Si se cumple una condición, realizaremos una serie de instrucciones.
+            </p>
+            <pre><code>                   
+int x=5;
+if(x > 3){
+    Sytem.out.println("Es mayor que 3");
+}
+            </code></pre>
+            <p>
+                En este código podemos ver que si x es mayor que 3, se cumple la condición, por lo tanto en pantalla nos dira "Es mayor que 3".Pero si no se cumple, no tendremos ningún mensaje.Si queremos que nos salga, podriamos utilizar un if-else.
+            </p>
+            <pre><code>
+int x=10;
+if(x < 5){
+    System.out.println("El número es mayor");
+}else{
+    System.out.println("El número es menor");
+}                    
+            </code></pre>
+            <p>
+                Aquí hemos visto que podemos controlar 2 estados.Podriamos encadenar diferentes condiciones, sin ningún problema, aunque es posible que con un switch-case, la sensación del código seria mas elegante.
+            </p>
+            <pre><code>
+int x=2;
+switch(x){
+    case 0:
+        System.out.println("El número es 0");
+        break;
+    case 1:
+        System.out.println("El número es 1");
+        break;
+    case 2:
+        System.out.println("El número es 2");
+        break;
+    default:
+        System.out.println("El número no es 0 ni 1 ni 2");
+        break;
+}
+            </code></pre>
+            <p>Nos muestrará que el número es el 2.</p>
+        </section>
+        <section class="main-section" id="estructuras_repetitivas">
+            <header>
+                <h2>Estructuras repetitivas</h2>
+            </header>
+            <p>
+                Para realizar tareas repetitivas o en bucle, tenemos una serie de estructuras muy utiles:
+            </p>
+            <ul>
+                <li>WHILE</li>
+                <li>DO-WHILE</li>
+                <li>FOR</li>
+                <li>FOR-EACH</li>
+            </ul>
+            <p>
+                Hay 2 tipos de estructura. Las que sabemos cuantas veces se van a repetir y las que no. Entre las que no tenemos un número de repeticiones definido tenemos los 2 bucles while.
+            </p>
+            <p>
+                WHILE es un bucle que realiza su función
+                <b>MIENTRAS</b> se cumple una sentencia.
+            </p>
+            <pre><code>
+int x=0;
+while( x < 2){
+    System.out.println(x);
+    x++;
+}
+            </code></pre>
+            <p>
+                Hará repeticiones mostrandonos el número que contiene la x. Si cuando llegue a la condición, se sigue cumpliendo, vuelve a ejecutarse el código.Esto nos mostrará 0,1 y el 2 no, porque no se cumpliria la condición de ser menor que 2.
+            </p>
+            <p>
+                DO-WHILE funciona igual, pero siempre ejecutará el código 1 vez mínimo, porque hace la comprobación después del bloque de código.
+            </p>
+            <pre><code>
+boolean datoOk=false;
+do{
+    datoOk=true;
+
+}while(datoOk==false);
 
             </code></pre>
-        <p>
-          En este código podemos ver que si x es mayor que 3, se cumple la
-          condición, por lo tanto en pantalla nos dira "Es mayor que 3".Pero si
-          no se cumple, no tendremos ningún mensaje.Si queremos que nos salga,
-          podriamos utilizar un if-else.
-        </p>
-        <pre><code>
-                    int x=10;
-                    if(x < 5){
-                        System.out.println("El número es mayor");
-                    }else{
-                        System.out.println("El número es menor");
-                    }
-                    
-            </code></pre>
-        <p>
-          Aquí hemos visto que podemos controlar 2 estados.Podriamos encadenar
-          diferentes condiciones, sin ningún problema, aunque es posible que con
-          un switch-case, la sensación del código seria mas elegante.
-        </p>
-        <pre><code>
-                int x=2;
-
-                switch(x){
-                    case 0:
-                        System.out.println("El número es 0");
-                        break;
-                    case 1:
-                        System.out.println("El número es 1");
-                        break;
-                    case 2:
-                        System.out.println("El número es 2");
-                        break;
-                    default:
-                        System.out.println("El número no es 0 ni 1 ni 2");
-                        break;
-                }
+            <p>
+                Este es un ejemplo absurdo, pero rápido. Entramos con una variable que tiene un false como valor. Nuestra condición es que esa variable tenga un valor false, pero en el interior del código cambiamos el valor a true.Hemos ejecutado las sentencias del bloque
+                1 sola vez, pero se ha ejecutado.
+            </p>
+            <p>
+                Entre las que conocemos la cantidad de repeticiones que se realizarán, la principal es el bucle for, en el que seremos nosotros quienes determinemos cuantas veces ejecutaremos el codigo interno.
+            </p>
+            <pre><code>
+for(int i=0;i < 5; i++){
+    System.out.print(i+ ",")
+}
+System.out.print(5);
 
             </code></pre>
-        <p>Nos muestrará que el número es el 2.</p>
-      </section>
-      <section id="estructuras_repetitivas" class="main-section">
-        <header>
-          <h2>Estructuras repetitivas</h2>
-        </header>
-        <p>
-          Para realizar tareas repetitivas o en bucle, tenemos una serie de
-          estructuras muy utiles:
-        </p>
-        <ul>
-          <li>WHILE</li>
-          <li>DO-WHILE</li>
-          <li>FOR</li>
-          <li>FOR-EACH</li>
-        </ul>
-        <p>
-          Hay 2 tipos de estructura. Las que sabemos cuantas veces se van a
-          repetir y las que no. Entre las que no tenemos un número de
-          repeticiones definido tenemos los 2 bucles while.
-        </p>
-        <p>
-          WHILE es un bucle que realiza su función <b>MIENTRAS</b> se cumple una
-          sentencia.
-        </p>
-        <pre><code>
-                    int x=0;
-                    while( x < 2){
-                        System.out.println(x);
-                        x++;
-                    }
+            <p>
+                Este código nos imprimirá los números del 0 al 4 con una coma intermedia ( 0,1,2,3,4,) y nos agregará el 5 con el print que está fuera del bucle, porque tenemos controlado el resultado.
+            </p>
+            <p>
+                Dejaremos para otros proyectos el bucle for, destinado sobretodo para el uso sobre arrays u objetos.
+            </p>
+        </section>
+        <section class="main-section" id="los_metodos">
+            <header>
+                <h2>Los_métodos</h2>
+            </header>
+            <p>
+                Un método es una parte reducida de código que realiza alguna función reiterativa durante la ejecución del programa.
+            </p>
+            <p>
+                Su estructura es
+                <b>
+                    tipoDeDatoDevuelto nombreMetodo(){ codigo}
+                </b>
+            </p>
+            <p>
+                Veamos un ejemplo.El siguiente método es para pedir a un usuario un nombre mediante la consola.
+            </p>
+            <pre><code>
+String pideNombre(){
+    Scanner scan=new Scanner(System.in);
+    System.out.prinln("Introduce un nombre");
+    String nombre=scan.next();
+    return nombre;
+}
             </code></pre>
-        <p>
-          Hará repeticiones mostrandonos el número que contiene la x. Si cuando
-          llegue a la condición, se sigue cumpliendo, vuelve a ejecutarse el
-          código.Esto nos mostrará 0,1 y el 2 no, porque no se cumpliria la
-          condición de ser menor que 2.
-        </p>
-        <p>
-          DO-WHILE funciona igual, pero siempre ejecutará el código 1 vez
-          mínimo, porque hace la comprobación después del bloque de código.
-        </p>
-        <pre><code>
-                    boolean datoOk=false;
-                    do{
-                        datoOk=true;
-
-                    }while(datoOk==false);
-
-            </code></pre>
-        <p>
-          Este es un ejemplo absurdo, pero rápido. Entramos con una variable que
-          tiene un false como valor. Nuestra condición es que esa variable tenga
-          un valor false, pero en el interior del código cambiamos el valor a
-          true.Hemos ejecutado las sentencias del bloque 1 sola vez, pero se ha
-          ejecutado.
-        </p>
-        <p>
-          Entre las que conocemos la cantidad de repeticiones que se realizarán,
-          la principal es el bucle for, en el que seremos nosotros quienes
-          determinemos cuantas veces ejecutaremos el codigo interno.
-        </p>
-        <pre><code>
-                for(int i=0;i < 5; i++){
-                    System.out.print(i+ ",")
-                }
-                System.out.print(5);
-
-            </code></pre>
-        <p>
-          Este código nos imprimirá los números del 0 al 4 con una coma
-          intermedia ( 0,1,2,3,4,) y nos agregará el 5 con el print que está
-          fuera del bucle, porque tenemos controlado el resultado.
-        </p>
-        <p>
-          Dejaremos para otros proyectos el bucle for, destinado sobretodo para
-          el uso sobre arrays u objetos.
-        </p>
-      </section>
-      <section id="los_metodos" class="main-section">
-        <header>
-          <h2>Los_métodos</h2>
-        </header>
-        <p>
-          Un método es una parte reducida de código que realiza alguna función
-          reiterativa durante la ejecución del programa.
-        </p>
-        <p>
-          Su estructura es <b>tipoDeDatoDevuelto nombreMetodo(){ codigo}</b>
-        </p>
-        <p>
-          Veamos un ejemplo.El siguiente método es para pedir a un usuario un
-          nombre mediante la consola.
-        </p>
-        <pre><code>
-                    String pideNombre(){
-                        Scanner scan=new Scanner(System.in);
-                        System.out.prinln("Introduce un nombre");
-                        String nombre=scan.next();
-
-                        return nombre;
-                    }
-            </code></pre>
-        <p>
-          El nombre debe de ser descriptivo de la función del método.La segunda
-          linea es una instanciacion de la clase Scanner, esto ya es tema de
-          bibliotecas y clases.Pedimos al usuario un nombre mediante la consola.
-          Y utilizamos la instancia para recepcionar el nombre. Y lo devolvemos
-          al código con la palabra return.
-        </p>
-        <p>
-          Dentro de los parentesis podemos agregar parámetros desde el código
-          principal para variar el funcionamiento interno del código.Ahora
-          pediremos un número y este deberá estar dentro de un rango.
-        </p>
-        <pre><code>
-                    int pideNumero(int min, int max){
-                        Scanner scan=new Scanner(System.in);
-                        do{
-                        System.out.prinln("Introduce un número");
-                        int num=scan.nextInt();
-                        }(num <= max && num >= min);
-                        return num;
-                    }
+            <p>
+                El nombre debe de ser descriptivo de la función del método.La segunda linea es una instanciacion de la clase Scanner, esto ya es tema de bibliotecas y clases.Pedimos al usuario un nombre mediante la consola. Y utilizamos la instancia para recepcionar
+                el nombre. Y lo devolvemos al código con la palabra return.
+            </p>
+            <p>
+                Dentro de los parentesis podemos agregar parámetros desde el código principal para variar el funcionamiento interno del código.Ahora pediremos un número y este deberá estar dentro de un rango.
+            </p>
+            <pre><code>
+int pideNumero(int min, int max){
+    Scanner scan=new Scanner(System.in);
+    do{
+    System.out.prinln("Introduce un número");
+    int num=scan.nextInt();
+    }(num <= max && num >= min);
+    return num;
+}
              </code></pre>
-        <p>
-          Utilizamos un bucle do-while para realizar peticiones hasta que el
-          número esté dentro de los márgenes adecuados.
-        </p>
-      </section>
-      <section id="mas_informacion" class="main-section">
-        <header>
-          <h2>Más información</h2>
-        </header>
-        <p>
-          Un lugar para comenzar puede ser w3schools.
-          <a href="https://www.w3schools.com/java/default.asp" target="_blank"
-            >Para más información...</a
-          >
-        </p>
-      </section>
+            <p>
+                Utilizamos un bucle do-while para realizar peticiones hasta que el número esté dentro de los márgenes adecuados.
+            </p>
+        </section>
+        <section class="main-section" id="mas_informacion">
+            <header>
+                <h2>Más información</h2>
+            </header>
+            <p>
+                Un lugar para comenzar puede ser w3schools.
+                <a href="https://www.w3schools.com/java/default.asp" target="_blank">
+                    Para más información...
+                </a>
+            </p>
+        </section>
     </main>
-  </body>
+</body>
+
 </html>
